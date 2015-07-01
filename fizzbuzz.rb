@@ -12,6 +12,7 @@
     puts 'Fizz'
   elsif i % 5 == 0
     puts 'FizzBuzz'
-  else puts i
+  else
+    puts i
   end
 end
