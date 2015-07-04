@@ -3,7 +3,7 @@
 class Snaker
   def snake(array)
     offset_length = 0
-    array_length = (array.count - 1)
+    array_length = (array.size - 1)
     array.each_with_index do |word, index|
       offset = ' ' * offset_length
       if index.even?
