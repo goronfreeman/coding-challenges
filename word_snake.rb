@@ -2,13 +2,14 @@
 
 class Snaker
   def snake(array)
-    length = 0
+    offset_length = 0
+    array_length = (array.count - 1)
     array.each_with_index do |word, index|
-      offset = ' ' * length
+      offset = ' ' * offset_length
       if index.even?
-        length += (word.length - 1)
+        offset_length += (word.length - 1)
         puts "#{offset} #{word}"
-      elsif index.odd? && index[-1]
+      elsif index.odd? && index == array_length
         letters = word.split('')
         letters.shift
         letters.each do |letter|
