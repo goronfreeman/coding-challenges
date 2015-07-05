@@ -3,7 +3,6 @@
 class TodoList
   def initialize
     @list = []
-    @count = 0
   end
 
   def add_item(task)
