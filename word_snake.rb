@@ -8,18 +8,13 @@ class Snaker
       offset = ' ' * offset_length
       if index.even?
         offset_length += (word.length - 1)
-        puts "#{offset} #{word}"
-      elsif index.odd? && index == array_length
-        letters = word.split('')
-        letters.shift
-        letters.each do |letter|
-          puts "#{offset} #{letter}"
-        end
+        puts offset + word
       else
         letters = word.split('')
-        letters.shift && letters.pop
+        letters.shift
+        letters.pop if index != array_length
         letters.each do |letter|
-          puts "#{offset} #{letter}"
+          puts offset + letter
         end
       end
     end
