@@ -7,7 +7,7 @@ counter = 0
 
 until b == b.to_s.reverse.to_i
   counter += 1
-  b = (b + b.to_s.reverse.to_i)
+  b += b.to_s.reverse.to_i
 end
 
 puts "#{a} gets palidromic after #{counter} steps: #{b}"
