@@ -1,4 +1,4 @@
-# coding-challenges
+# daily-programmer
 
 <p align="center">
   <img src="https://d.thumbs.redditmedia.com/mASxBAsOsW90oWe-.png" alt="/r/dailyprogrammer!"/>
